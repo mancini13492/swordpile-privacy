@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swordpile — Data Deletion</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #222; background: #fff; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  th, td { border: 1px solid #ccc; padding: 0.4rem 0.5rem; text-align: left; vertical-align: top; }
+  @media (prefers-color-scheme: dark) { body { background: #14101c; color: #ddd; } a { color: #9ad; } th, td { border-color: #554a66; } }
+</style>
+</head>
+<body>
+<h1>Swordpile — Data Deletion</h1>
+<p><em>Effective date: 15 October 2026</em></p>
+
+<p>Swordpile, by Anvilbyte Studios (operated by the developer), has no accounts and never asks
+for your name. This page explains how to delete what the app stores, what is deleted, what is
+kept and for how long. The <a href="privacy-policy.html">Privacy Policy</a> has the full
+picture.</p>
+
+<h2>In the game</h2>
+<ul>
+<li><strong>Leave Rankings</strong> (More, then Rankings, then Leave rankings): our server deletes
+your Rankings entry, your name, your positions on every list and the abuse notes about your
+code, at once. It needs a connection; offline, nothing changes and you can try again.</li>
+<li><strong>Reset Character</strong> (More, under Save Data): erases your progress on this device.
+If you had joined Rankings and you are online, it also deletes your Rankings entry. Your
+purchases are kept on the device so they can be honoured.</li>
+<li><strong>Uninstall the app</strong>: deletes everything the app stored on the device, including
+your purchases list and the random codes it made. A Rankings entry you did not leave is then
+deleted by our server 180 days after its last update.</li>
+<li><strong>Cloud backup</strong>: Google or Apple stores it in your own account. On Android, remove
+Swordpile's data from your Google account's Play Games data. On iPhone and iPad, open Settings,
+tap your name, then iCloud, then Manage Account Storage (Storage on some versions), choose
+Swordpile and delete its data.</li>
+</ul>
+
+<h2>By email</h2>
+<p>Email <a href="mailto:anvilbytestudio@gmail.com">anvilbytestudio@gmail.com</a> with the
+subject "Delete my data". Because we hold no name or account, include your Rankings name if you
+joined Rankings (it is shown in More, then Rankings). We confirm and act within one month, and
+delete your emails to us too if you ask.</p>
+
+<h2>What is deleted, what is kept, and for how long</h2>
+<table>
+<tr><th>Data</th><th>Deleted</th></tr>
+<tr><td>Rankings entry: one-way hash of your code, random name, best waves, play time, version</td><td>At once when you Leave or Reset Character online; otherwise 180 days after its last update</td></tr>
+<tr><td>Rankings abuse notes</td><td>With your entry when you Leave, otherwise after 90 days</td></tr>
+<tr><td>A code we hid for cheating</td><td>Only its one-way hash is kept, while the hide stands, so the same code cannot rejoin unhidden</td></tr>
+<tr><td>Your IP address on our server</td><td>Kept only as a scrambled value; the scrambling key is deleted after 2 days, and the request counter after about a minute</td></tr>
+<tr><td>Supabase request logs (include your IP address)</td><td>Deleted automatically after up to 7 days</td></tr>
+<tr><td>Purchase check records (when purchase checking is on): one-way hashes of the store receipt and of a random install code, the product, check and refund dates</td><td>Kept for 24 months, then deleted automatically. They name no person, so we cannot find yours from an email; we keep them to honour refunds and prevent fraud</td></tr>
+<tr><td>Emails to us</td><td>Within 24 months of your last message, or sooner if you ask</td></tr>
+<tr><td>Save, settings, purchases list on your device</td><td>When you uninstall (Reset Character erases the save and keeps the purchases list)</td></tr>
+</table>
+
+<h2>Data held by Google and Apple</h2>
+<p>Google AdMob, Google Play and Apple handle their own data under their own policies. You can
+reset or delete your advertising ID in your device settings, and manage your Google data at
+<a href="https://myaccount.google.com/">myaccount.google.com</a>. Purchase history kept by Google
+Play or the App Store is managed in your store account.</p>
+</body>
+</html>
